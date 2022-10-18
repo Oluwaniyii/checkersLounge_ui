@@ -1,0 +1,77 @@
+@use "./init";
+
+section.action_buttons-area .container {
+  height: 80vh;
+  width: 100%;
+}
+
+section.action_buttons-area .nav {
+  width: fit-content;
+  margin-left: auto;
+}
+
+section.action_buttons-area .nav .button {
+}
+
+section.action_buttons-area .nav .button button {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 2px;
+  box-shadow: -10px 10px 17px 3px #1b1616a1;
+  border: none;
+  font-size: 1.5em;
+  font-weight: 700;
+  transition: background 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: linear-gradient(to bottom right, brown, rgb(94, 35, 35));
+  color: #b0b0b0;
+
+  &:hover {
+    background: linear-gradient(to bottom right, rgb(107, 40, 40), brown);
+  }
+}
+
+section.action_buttons-area .nav button.danger {
+  background: linear-gradient(to bottom right, #dc1919, #7b0d0d);
+  color: #b0b0b0;
+
+  &:hover {
+    background: linear-gradient(to bottom right, #7b0d0d, #dc1919);
+  }
+}
+
+section.action_buttons-area .nav button.off {
+  background: linear-gradient(to bottom right, #403d3d, #332c2c);
+  color: #585858;
+
+  &:hover {
+    background: linear-gradient(to bottom right, #332c2c, #403d3d);
+  }
+}
+
+div.login-icon-area {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+
+div.login-icon-area .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.login-icon-area .user-pfp {
+  @extend %userIcon;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM0Si5HLXwmsZea44NJTb9jeNmJ5ASW_otQHkyUM46UB9N4Tmp");
+}
+
+div.login-icon-area .name-plate {
+  font-family: init.$font-alumni;
+  color: #f7b7b7;
+}

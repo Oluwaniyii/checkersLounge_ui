@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100;200;300;500;600;700;800;900&family=Inter:wght@200;300;500;600&family=Padauk:wght@400;700&display=swap");
+
+$font-alumni: "Alumni Sans", sans-serif;
+$font-inter: "Inter", sans-serif;
+$font-padauk: "Padauk", sans-serif;
+
+$text-primary: #f7b7b7;
+$text-secondary: #b0b0b0;
+$bg-primary: #2b2626;
+
+%userIcon {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #363333;
+  border: 3px solid #363333;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // border: 1px solid rgba(255, 0, 0, 0.379);
+}
+
+body {
+  background-color: #2b2626;
+  padding-bottom: 0;
+}
+
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 4fr 2fr 1fr;
+  grid-gap: 2px;
+  position: relative;
+}
+
+.wrapper section {
+  background-color: #2b2626;
+}
