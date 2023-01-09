@@ -34,9 +34,6 @@ body {
   background-color: #2b2626;
 }
 
-/* 
-GAME AREA
-*/
 section.game-area {
   background: none;
   display: grid;
@@ -44,9 +41,6 @@ section.game-area {
   grid-gap: 2px;
 }
 
-/* .game--area
-    .section.players-turn
-    */
 section.game-area .section.players-turn .container {
   padding: 0.5em 0;
   display: flex;
@@ -86,9 +80,6 @@ section.game-area .section.players-turn .container {
   text-shadow: 0 0 3px #ae2020;
 }
 
-/* .game--area
-    .section.game-board
-    */
 section.game-area .section.game-board {
   background: none;
 }
@@ -114,10 +105,6 @@ section.game-area .section.game-board .container .board .board-inner {
   background: #a28353;
 }
 
-/*
-    .game-area 
-    .section.spectator-area
-    */
 section.game-area .section.spectator-area .container {
   height: 100%;
   max-width: 90%;
@@ -159,9 +146,6 @@ section.action_buttons-area {
   align-items: flex-end;
 }
 
-/* 
-CHAT AREA
-*/
 section.chat-area {
   background: none;
   display: flex;
@@ -174,7 +158,7 @@ section.chat-area {
   width: 100%;
   display: flex;
   flex-direction: column;
-  box-shadow: -10px 10px 37px 3px #1b1616;
+  box-shadow: -3px 1px 10px 3px rgba(27, 22, 22, 0.3490196078);
 }
 
 .chat-box .message-box {
@@ -204,15 +188,12 @@ section.chat-area {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.092);
+  background: transparent;
+  background: rgba(0, 0, 0, 0.068);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.113);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.23);
+  background: rgba(0, 0, 0, 0.096);
 }
 
 .chat-box .message-box ul.messages li.message {
@@ -221,8 +202,7 @@ section.chat-area {
   line-height: 120%;
   color: #f7b7b7;
   font-family: "Inter", sans-serif;
-  margin-bottom: 2px;
-  background: rgba(0, 0, 0, 0.018);
+  padding: 0.21em 0;
 }
 
 .chat-box .message-box ul.messages li.message .message-name {
@@ -236,7 +216,6 @@ section.chat-area {
   color: #b0b0b0;
 }
 
-/* Message input */
 .chat-box .message-input {
   width: 100%;
   height: 40px;
@@ -254,7 +233,7 @@ section.chat-area {
 .chat-box .message-input input {
   height: inherit;
   width: inherit;
-  color: #f7b7b7;
+  color: #b0b0b0;
   font-family: "Inter", sans-serif;
   font-size: 12px;
   font-weight: 700;
@@ -272,12 +251,14 @@ section.chat-area {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom right, brown, rgb(94, 35, 35));
-  color: #f7b7b7;
+  background: transparent;
+  color: #b0b0b0;
+  cursor: pointer;
+  opacity: 0.5;
 }
 
 .chat-box .message-input button:hover {
-  background: linear-gradient(to bottom right, rgb(107, 40, 40), brown);
+  opacity: 9;
 }
 
 section.action_buttons-area .container {
@@ -298,6 +279,7 @@ section.action_buttons-area .nav .button button {
   margin-bottom: 2px;
   box-shadow: -10px 10px 17px 3px rgba(27, 22, 22, 0.631372549);
   border: none;
+  border-radius: 50%;
   font-size: 1.5em;
   font-weight: 700;
   transition: background 0.5s;

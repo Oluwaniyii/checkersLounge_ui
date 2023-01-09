@@ -1,8 +1,5 @@
 @use "./init";
 
-/* 
-CHAT AREA
-*/
 section.chat-area {
   background: none;
   display: flex;
@@ -15,7 +12,7 @@ section.chat-area {
   width: 100%;
   display: flex;
   flex-direction: column;
-  box-shadow: -10px 10px 37px 3px #1b1616;
+  box-shadow: -3px 1px 10px 3px #1b161659;
 }
 
 .chat-box .message-box {
@@ -40,18 +37,15 @@ section.chat-area {
   overflow-y: scroll;
 }
 
-// custom scroll
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.092);
+  background: transparent;
+  background: rgba(0, 0, 0, 0.068);
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.113);
-}
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.23);
+  background: rgba(0, 0, 0, 0.096);
 }
 
 .chat-box .message-box ul.messages li.message {
@@ -60,8 +54,7 @@ section.chat-area {
   line-height: 120%;
   color: init.$text-primary;
   font-family: init.$font-inter;
-  margin-bottom: 2px;
-  background: rgba(0, 0, 0, 0.018);
+  padding: 0.21em 0;
 }
 .chat-box .message-box ul.messages li.message .message-name {
   font-weight: 700;
@@ -74,7 +67,6 @@ section.chat-area {
   color: init.$text-secondary;
 }
 
-/* Message input */
 .chat-box .message-input {
   width: 100%;
   height: 40px;
@@ -92,7 +84,7 @@ section.chat-area {
 .chat-box .message-input input {
   height: inherit;
   width: inherit;
-  color: init.$text-primary;
+  color: init.$text-secondary;
   font-family: init.$font-inter;
   font-size: 12px;
   font-weight: 700;
@@ -100,7 +92,6 @@ section.chat-area {
   background: init.$bg-primary;
 }
 
-// %button
 .chat-box .message-input button {
   width: 50px;
   height: auto;
@@ -111,10 +102,12 @@ section.chat-area {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom right, brown, rgb(94, 35, 35));
-  color: init.$text-primary;
+  background: transparent;
+  color: init.$text-secondary;
+  cursor: pointer;
+  opacity: 0.5;
 }
 
 .chat-box .message-input button:hover {
-  background: linear-gradient(to bottom right, rgb(107, 40, 40), brown);
+  opacity: 09;
 }

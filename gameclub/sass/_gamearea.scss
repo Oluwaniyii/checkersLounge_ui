@@ -1,8 +1,5 @@
 @use "./init";
 
-/* 
-GAME AREA
-*/
 section.game-area {
   background: none;
   display: grid;
@@ -13,9 +10,6 @@ section.game-area {
 section.game-area .section {
 }
 
-/* .game--area
-    .section.players-turn
-    */
 section.game-area .section.players-turn {
 }
 section.game-area .section.players-turn .container {
@@ -57,9 +51,6 @@ section.game-area .section.players-turn .container {
   text-shadow: 0 0 3px #ae2020;
 }
 
-/* .game--area
-    .section.game-board
-    */
 section.game-area .section.game-board {
   background: none;
 }
@@ -84,10 +75,6 @@ section.game-area .section.game-board .container .board .board-inner {
   background: #a28353;
 }
 
-/*
-    .game-area 
-    .section.spectator-area
-    */
 section.game-area .section.spectator-area {
 }
 section.game-area .section.spectator-area .container {
