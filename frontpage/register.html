@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            Checkers Lounge
+        </div>
+        <div class="login-area">
+            <div class="helper-hint">
+                Create game account
+            </div>
+
+            <form class="login-form">
+                <div class="pfp">
+                    <div class="file">
+                        <input type="file" class="custom-file-input" id="fileInput" onchange="loadFile(event)" required>
+                    </div>
+
+                    <div class="avatar" id="avatar">
+                    </div>
+                </div>
+
+                <div class="form-control">
+                    <input type="text" placeholder="Username" required>
+                </div>
+
+                <div class="form-control">
+                    <input type="email" placeholder="Email" required>
+                </div>
+
+                <div class="form-control">
+                    <input type="password" placeholder="Password" required>
+                </div>
+
+                <div class="form-control">
+                    <input type="submit" value="Sign In">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var loadFile = function (event) {
+            const output = document.getElementById('avatar');
+            const inmemoryImageAddress = event.target.files[0] ? URL.createObjectURL(event.target.files[0]) : null;
+            output.style.backgroundImage = inmemoryImageAddress ? `url(${inmemoryImageAddress})` : "none";
+        };
+    </script>
+</body>
+</html>
